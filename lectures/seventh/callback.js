@@ -9,3 +9,4 @@ function printX2(callback) {  // when printX2 call the argument passed will come
 
 
 printX2(x1);  // calling printX2 and passing x1 as an argument
+
