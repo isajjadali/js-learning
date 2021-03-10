@@ -1,16 +1,20 @@
 function print(innerObject) {
-    innerObject.c = 'testing';
-    console.log(innerObject, 'inner object');
+    let obj = { ...innerObject };
+    obj.c = 'testing';
+    console.log(obj, 'inner object');
 }
 
 let object = {
     b: 2
 };
 
-// shallow copy
-let shallowCopy = Object.assign({}, object);
+print(object);
+console.log(object, 'object');
 
-let shallowCopy1 = { ...object }; // ...(spread operator)
+// // shallow copy
+// let shallowCopy = Object.assign({}, object);
 
-print(shallowCopy);
-console.log(shallowCopy, 'outer object');
+// let shallowCopy1 = { ...object }; // ...(spread operator)
+
+// print(shallowCopy);
+// console.log(shallowCopy, 'outer object');
