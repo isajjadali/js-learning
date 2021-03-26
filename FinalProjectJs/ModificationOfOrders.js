@@ -421,11 +421,14 @@ ordermodification={
               
             ],
         },
+        
     ],
-
 }
 modifiedOrders.push(ordermodification);
 }
 return modifiedOrders;
 }
-console.log(modifyOrders());
+let dish;
+ console.log(modifyOrders());
+dish=(modifiedOrders[0].dishes[0].quantities[0]);
+console.log(dish);
