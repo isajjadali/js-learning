@@ -6,5 +6,6 @@ function print(innerObject) {
 let object = {
     b: 2
 };
+//let arr= JSON.parse(JSON.stringify(object));
 print(object);
 console.log(object, 'outer object');

@@ -52,7 +52,7 @@ async function x() {
     getUser(1)
         .then((res) => {
             console.log(res, 'res');
-            return getUserProjects(4);
+            return getUserProjects(1);
         })
         .then((resp) => {
             console.log(resp, 'resp');

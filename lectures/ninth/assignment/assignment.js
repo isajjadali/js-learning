@@ -14,6 +14,7 @@ let students = [
                 computer: 90
             }
         ],
+        
         attendences: [
             {
                 monday: 'present'
@@ -167,6 +168,7 @@ let students = [
             }
         ],
     }
+
 ];
 
 
@@ -179,3 +181,21 @@ let students = [
 
 // Hints
 // get keys of object => Object.keys(obj);
+
+
+ let modifiedStudents = students.filter((student) => {
+   let index;
+    
+      let filteredSubject = students.filter((subjects => Object.keys(subjects)));
+//      let obj = {};
+//  filteredSubject.forEach((subject) => {
+//       obj[subject.name] = subject;
+//      });
+
+      return {
+        subjects: filteredSubject
+    
+     }
+ })
+// console.log(JSON.stringify(modifiedStudents, null, 2));
+ console.log(modifiedStudents);

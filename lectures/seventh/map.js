@@ -3,7 +3,7 @@ Array.prototype.map1 = function (callback) {
     for (let i = 0; i < this.length; i++) {
         array.push(callback(this[i]));
     }
-    return array;
+     return array;
 }
 
 let array = [1, 2, 3, 4, 5, 6];
