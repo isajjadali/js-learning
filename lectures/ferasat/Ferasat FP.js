@@ -255,14 +255,14 @@ let u2 = new user(2,'basit','ali',{ day: 20,year: 1995,month: 6,},[
 // /* task 2 3 part of making promise and returnig objects according to the condtion */ 
 let usersPromise = function makingPromiseOfUsers() {
     return new Promise((resolve,reject) => {
-        return resolve([u1,u2]);
-return reject('The resolve do not work prpperly ');
+         resolve([u1,u2]);
+         reject('The resolve do not work prpperly ');
     })
 }
 let ordersPromise = function makingPromiseOFOrders() {
     return new Promise((resolve,reject) => {
-return resolve([o1,o2]);
-return reject('The resolve do not work prpperly ');
+        resolve([o1,o2]);
+     reject('The resolve do not work prpperly ');
     })
 }
 let checkingAfterGivingUserID= function check(idOfUser,arrayOfOrders) {
