@@ -9,8 +9,9 @@ function greet(message) {
 
   greet.apply(person, ['Learn With US']); 
   
-  
+
 console.log('Apply Method', 'Learning With Us');
+
 
 
 
